@@ -7,7 +7,7 @@ load_dotenv()
 
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
-
+OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
 
 st.title("💬 Chatbot")
 if "messages" not in st.session_state:
